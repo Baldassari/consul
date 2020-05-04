@@ -3,6 +3,7 @@ export default function(visitable, clickable, text, attribute, collection, page,
     name: text('a span:nth-child(2)'),
     service: clickable('a'),
     externalSource: attribute('data-test-external-source', '[data-test-external-source]'),
+    gatewaySource: attribute('data-test-gateway-source', '[data-test-gateway-source]'),
   };
   return {
     visit: visitable('/:dc/services'),

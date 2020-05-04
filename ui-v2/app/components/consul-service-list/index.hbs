@@ -5,6 +5,11 @@
     {{item.Name}}
   </a>
   <ul>
+    <ConsulGatewaySource @item={{item.Kind}} as |GatewaySource|>
+      <li>
+        <GatewaySource />
+      </li>
+    </ConsulGatewaySource>
     <ConsulExternalSource @item={{item}} as |ExternalSource|>
       <li>
         <ExternalSource />

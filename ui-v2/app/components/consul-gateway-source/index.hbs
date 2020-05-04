@@ -1,0 +1,11 @@
+{{#if item}}
+  {{#if (has-block)}}
+    {{yield
+      (component 'consul-gateway-source' item=item)
+    }}
+  {{else}}
+    <span data-test-gateway-source={{item}} class="consul-external-source source-gateway">
+        <span>{{titleize (humanize item)}}</span>
+    </span>
+  {{/if}}
+{{/if}}

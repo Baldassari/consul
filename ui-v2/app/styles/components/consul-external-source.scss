@@ -33,3 +33,7 @@
 .source-aws::before {
   @extend %with-logo-aws-color-icon, %as-pseudo;
 }
+.source-gateway::before {
+  @extend %with-gateway-mask, %as-pseudo;
+  background-color: $gray-500;
+}
